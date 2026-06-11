@@ -212,11 +212,12 @@ a {
 
 .btn-gaming{
     background:#7C3AED;
-    color:white;
+    color:#fff;
 }
 
 .btn-gaming:hover{
     background:#5B21B6;
+    transform:translateY(-3px);
 }
 
 .hero-buttons{
