@@ -175,6 +175,82 @@ a {
     flex-wrap: wrap;
     gap: 20px;
 }
+.hero-content{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-title{
+    font-size:4rem;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.hero-subtitle{
+    font-size:1.3rem;
+    opacity:.95;
+    margin-bottom:25px;
+}
+
+.hero-badges{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+.hero-badges span{
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(10px);
+    padding:10px 18px;
+    border-radius:50px;
+    font-weight:600;
+}
+
+.btn-gaming{
+    background:#7C3AED;
+    color:white;
+}
+
+.btn-gaming:hover{
+    background:#5B21B6;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.hero-buttons .btn{
+    min-width:180px;
+}
+
+@media(max-width:768px){
+
+    .hero-title{
+        font-size:2.6rem;
+    }
+
+    .hero-badges{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hero-buttons .btn{
+        width:100%;
+        max-width:320px;
+    }
+}
 
 /* ==================== STATS SECTION ==================== */
 .stats {
