@@ -1,4 +1,3 @@
-
 // ==================== SMOOTH SCROLLING ====================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -16,9 +15,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ==================== HEADER SCROLL EFFECT (si vous ajoutez une navbar plus tard) ====================
-// Simple effet de fade pour les éléments au scroll
-const fadeElements = document.querySelectorAll('.stat-card, .product-card, .review-card');
+// ==================== FADE IN EFFECT ====================
+const fadeElements = document.querySelectorAll('.stat-card, .product-card, .review-card, .store-card');
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -27,16 +25,19 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.style.transform = 'translateY(0)';
         }
     });
-}, { threshold: 0.1 });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
 fadeElements.forEach(el => {
     el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
     observer.observe(el);
 });
 
-// ==================== CONSOLE LOG POUR LE SUIVI ====================
-console.log('🚀 YOKA TECH - Site prêt ! Téléphones • PC • Gaming • Consoles');
-console.log('📞 YOKA PHONE: 0559 21 61 95');
-console.log('🎮 YOKA GAMING: 0795 94 67 28');
+// ==================== FLOATING WA EFFECT ====================
+const floatingWa = document.querySelector('.floating-wa');
+if (floatingWa) {
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        if (current
