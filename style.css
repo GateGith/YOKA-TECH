@@ -453,7 +453,44 @@ a {
 .info-item a:hover {
     text-decoration: underline;
 }
+.store-info h3{
+    font-size:1.8rem;
+    margin-bottom:15px;
+    color:#111827;
+}
 
+.store-description{
+    color:#6b7280;
+    margin-bottom:25px;
+    line-height:1.8;
+}
+
+.store-features{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:25px 0;
+}
+
+.store-features span{
+    background:#f3f4f6;
+    padding:10px 15px;
+    border-radius:50px;
+    font-size:.9rem;
+    font-weight:600;
+}
+
+.store-info{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.store-image img{
+    height:320px;
+    object-fit:cover;
+    border-radius:20px;
+}
 /* ==================== PRODUCTS SECTIONS ==================== */
 .products-section {
     padding: 80px 0;
