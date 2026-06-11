@@ -252,59 +252,114 @@ a {
     }
 }
 
-/* ==================== STATS SECTION ==================== */
-.stats {
-    padding: 60px 0;
-    background: var(--gray-light);
+/* ==================== STATS SECTION PRO ==================== */
+
+.stats{
+    padding:80px 0;
+    background:#f8fafc;
 }
 
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 25px;
-    text-align: center;
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
 }
 
-.stat-card {
-    background: var(--white);
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s;
-    text-align: center;
+.stat-card{
+    background:#ffffff;
+    border-radius:24px;
+    padding:35px 20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    transition:all .3s ease;
+    border:1px solid rgba(0,0,0,0.05);
 }
 
-.stat-card:hover {
-    transform: translateY(-5px);
+.stat-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 40px rgba(0,0,0,0.12);
 }
 
-.stat-stars {
-    font-size: 1.4rem;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
+.stat-icon{
+    font-size:2.8rem;
+    margin-bottom:15px;
 }
 
-.stat-number {
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--primary);
+.stat-number{
+    font-size:2.3rem;
+    font-weight:800;
+    color:#0A66FF;
+    margin-bottom:8px;
+    line-height:1;
 }
 
-.stat-label {
-    color: var(--gray);
-    font-size: 0.9rem;
-    margin: 5px 0;
+.stat-label{
+    font-size:1rem;
+    color:#6b7280;
+    margin-bottom:8px;
 }
 
-.stat-brand {
-    font-weight: 600;
-    margin-top: 8px;
+.stat-brand{
+    font-size:1rem;
+    font-weight:700;
+    color:#111827;
 }
 
-.stat-card i {
-    font-size: 2.5rem;
-    color: var(--primary);
-    margin-bottom: 10px;
+.stat-card:nth-child(2) .stat-number{
+    color:#7C3AED;
+}
+
+.stat-card:nth-child(1){
+    border-top:4px solid #0A66FF;
+}
+
+.stat-card:nth-child(2){
+    border-top:4px solid #7C3AED;
+}
+
+.stat-card:nth-child(3){
+    border-top:4px solid #10B981;
+}
+
+.stat-card:nth-child(4){
+    border-top:4px solid #F59E0B;
+}
+
+/* TABLET */
+
+@media(max-width:992px){
+
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+/* MOBILE */
+
+@media(max-width:576px){
+
+    .stats{
+        padding:60px 0;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .stat-card{
+        padding:30px 20px;
+    }
+
+    .stat-number{
+        font-size:2rem;
+    }
+
+    .stat-icon{
+        font-size:2.4rem;
+    }
+
 }
 
 /* ==================== STORE SECTIONS ==================== */
