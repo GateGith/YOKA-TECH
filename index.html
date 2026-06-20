@@ -1,419 +1,271 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>YOKA TECH | Spécialiste Tech à Kouba • Téléphones • PC • Gaming</title>
-    <meta name="description" content="YOKA TECH à Kouba, Alger : 2 boutiques spécialisées. Smartphones, PC gaming, consoles et accessoires. Plus de 160 avis Google.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>YOKA TECH | Spécialiste Tech à Kouba • Téléphones • PC • Gaming</title>
+  <meta name="description" content="YOKA TECH à Kouba, Alger : 2 boutiques spécialisées. Smartphones, PC gaming, consoles et accessoires. Plus de 160 avis Google." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
-    <!-- ==================== HERO SECTION PRO ==================== -->
-<section class="hero" id="hero">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
     <div class="hero-overlay"></div>
-
+    <div class="hero-particles" id="particles"></div>
     <div class="hero-content">
-
-        <img src="images/logo.png"
-             alt="YOKA TECH Logo"
-             class="hero-logo">
-
-        <h1 class="hero-title">
-            YOKA TECH
-        </h1>
-
-        <p class="hero-subtitle">
-            Téléphones • PC • Gaming • Consoles
-        </p>
-
-        <div class="hero-badges">
-            <span>⭐ 160+ Avis Google</span>
-            <span>📍 2 Boutiques à Kouba</span>
-            <span>🛡️ Produits Garantis</span>
-        </div>
-
-        <div class="hero-buttons">
-            <a href="tel:0559216195" class="btn btn-primary">
-                📱 YOKA PHONE
-            </a>
-
-            <a href="tel:0795946728" class="btn btn-gaming">
-                🎮 YOKA GAMING
-            </a>
-
-            <a href="https://wa.me/213559216195?text=Bonjour%20YOKA%20TECH"
-               class="btn btn-wa">
-                💬 WhatsApp
-            </a>
-        </div>
-
+      <div class="hero-logo-wrap">
+        <img src="images/logo.png" alt="YOKA TECH" class="hero-logo" />
+      </div>
+      <h1 class="hero-title">YOKA TECH</h1>
+      <p class="hero-subtitle">Téléphones • PC • Gaming • Consoles</p>
+      <div class="hero-badges">
+        <span><i class="fas fa-star"></i> 160+ Avis Google</span>
+        <span><i class="fas fa-store"></i> 2 Boutiques à Kouba</span>
+        <span><i class="fas fa-shield-alt"></i> Produits Garantis</span>
+      </div>
+      <div class="hero-buttons">
+        <a href="tel:0559216195" class="btn btn-primary"><i class="fas fa-phone-alt"></i> YOKA PHONE</a>
+        <a href="tel:0795946728" class="btn btn-gaming"><i class="fas fa-gamepad"></i> YOKA GAMING</a>
+        <a href="https://wa.me/213559216195?text=Bonjour%20YOKA%20TECH" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      </div>
     </div>
-</section>
-
-    <!-- ==================== STATS SECTION PRO ==================== -->
-<section class="stats">
-    <div class="container stats-grid">
-
-        <div class="stat-card">
-            <div class="stat-icon">📱</div>
-            <div class="stat-number">4.6★</div>
-            <div class="stat-label">71 Avis Google</div>
-            <div class="stat-brand">YOKA PHONE</div>
-        </div>
-
-        <div class="stat-card">
-            <div class="stat-icon">🎮</div>
-            <div class="stat-number">3.8★</div>
-            <div class="stat-label">89 Avis Google</div>
-            <div class="stat-brand">YOKA GAMING</div>
-        </div>
-
-        <div class="stat-card">
-            <div class="stat-icon">🏪</div>
-            <div class="stat-number">2</div>
-            <div class="stat-label">Boutiques à Kouba</div>
-        </div>
-
-        <div class="stat-card">
-            <div class="stat-icon">🛒</div>
-            <div class="stat-number">100+</div>
-            <div class="stat-label">Produits & Accessoires</div>
-        </div>
-
+    <div class="hero-scroll-indicator">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-</section>
-<!-- ==================== YOKA PHONE PRO ==================== -->
-<section class="store-section" id="yoka-phone">
+  </section>
 
+  <!-- ===== STATS ===== -->
+  <section class="stats" id="stats">
     <div class="container">
-
-        <div class="section-header">
-            <h2>📱 YOKA PHONE</h2>
-            <p>
-                Smartphones • PC Portables • Accessoires • Solutions Mobiles
-            </p>
+      <div class="stats-grid">
+        <div class="stat-card" data-delay="0">
+          <div class="stat-icon">📱</div>
+          <div class="stat-number" data-count="4.6">0</div>
+          <div class="stat-label">Avis Google</div>
+          <div class="stat-brand">YOKA PHONE</div>
         </div>
-
-        <div class="store-grid">
-
-            <div class="store-image">
-                <img src="images/yoka-phone-1.jpg"
-                     alt="YOKA PHONE Boutique">
-            </div>
-
-            <div class="store-image">
-                <img src="images/yoka-phone-2.jpg"
-                     alt="YOKA PHONE Produits">
-            </div>
-
-            <div class="store-info">
-
-                <h3>Votre spécialiste Tech à Kouba</h3>
-
-                <p class="store-description">
-                    Découvrez une large sélection de smartphones,
-                    PC portables et accessoires de qualité avec un
-                    accompagnement professionnel.
-                </p>
-
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Vieux Kouba, Alger</span>
-                </div>
-
-                <div class="info-item">
-                    <i class="fas fa-phone"></i>
-                    <a href="tel:0559216195">
-                        0559 21 61 95
-                    </a>
-                </div>
-
-                <div class="info-item">
-                    <i class="fab fa-instagram"></i>
-                    <a href="https://www.instagram.com/yoka_phone"
-                       target="_blank">
-                        @yoka_phone
-                    </a>
-                </div>
-
-                <div class="info-item">
-                    <i class="fab fa-tiktok"></i>
-                    <a href="https://www.tiktok.com/@yokaphone"
-                       target="_blank">
-                        @yokaphone
-                    </a>
-                </div>
-
-                <div class="store-features">
-                    <span>✅ Produits Originaux</span>
-                    <span>🚀 Disponibilité Rapide</span>
-                    <span>🛡️ Garantie Qualité</span>
-                </div>
-
-                <a href="https://www.google.com/maps/place/YOKA+PHONE+vieux+kouba,+16006,+Alg%C3%A9rie/@36.729249,3.0737182,16z/data=!4m6!3m5!1s0x128fad5f26d85d49:0x3576b5b230a96f40!8m2!3d36.729249!4d3.0737182!16s%2Fg%2F11gy1tr3gx"
-                   class="btn btn-primary"
-                   target="_blank">
-                    📍 Voir sur Google Maps
-                </a>
-
-            </div>
-
+        <div class="stat-card" data-delay="200">
+          <div class="stat-icon">🎮</div>
+          <div class="stat-number" data-count="3.8">0</div>
+          <div class="stat-label">Avis Google</div>
+          <div class="stat-brand">YOKA GAMING</div>
         </div>
-
+        <div class="stat-card" data-delay="400">
+          <div class="stat-icon">🏪</div>
+          <div class="stat-number" data-count="2">0</div>
+          <div class="stat-label">Boutiques à Kouba</div>
+        </div>
+        <div class="stat-card" data-delay="600">
+          <div class="stat-icon">🛒</div>
+          <div class="stat-number" data-count="100">0</div>
+          <div class="stat-label">Produits & Accessoires</div>
+        </div>
+      </div>
     </div>
+  </section>
 
-</section>
-
-<!-- ==================== YOKA GAMING PRO ==================== -->
-<section class="store-section alt-bg" id="yoka-gaming">
-
+  <!-- ===== YOKA PHONE ===== -->
+  <section class="store-section" id="yoka-phone">
     <div class="container">
-
-        <div class="section-header">
-            <h2>🎮 YOKA GAMING</h2>
-            <p>
-                Consoles • Jeux Vidéo • PC Gaming • Accessoires Gaming
-            </p>
+      <div class="section-header">
+        <h2>📱 YOKA PHONE</h2>
+        <p>Smartphones • PC Portables • Accessoires • Solutions Mobiles</p>
+      </div>
+      <div class="store-grid">
+        <div class="store-image glass-effect">
+          <img src="images/yoka-phone-1.jpg" alt="YOKA PHONE" loading="lazy" />
         </div>
-
-        <div class="store-grid">
-
-            <div class="store-image">
-                <img src="images/yoka-gaming-1.jpg"
-                     alt="YOKA GAMING Boutique">
-            </div>
-
-            <div class="store-image">
-                <img src="images/yoka-gaming-2.jpg"
-                     alt="YOKA GAMING Produits">
-            </div>
-
-            <div class="store-info">
-
-                <h3>L'univers Gaming à Kouba</h3>
-
-                <p class="store-description">
-                    Retrouvez les dernières consoles, jeux vidéo,
-                    PC Gaming et accessoires pour une expérience
-                    gaming complète.
-                </p>
-
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Kouba, Alger</span>
-                </div>
-
-                <div class="info-item">
-                    <i class="fas fa-phone"></i>
-                    <a href="tel:0795946728">
-                        0795 94 67 28
-                    </a>
-                </div>
-
-                <div class="info-item">
-                    <i class="fab fa-instagram"></i>
-                    <a href="https://www.instagram.com/yoka_gaming_"
-                       target="_blank">
-                        @yoka_gaming_
-                    </a>
-                </div>
-
-                <div class="info-item">
-                    <i class="fab fa-tiktok"></i>
-                    <a href="https://www.tiktok.com/@yoka_gaming_"
-                       target="_blank">
-                        @yoka_gaming_
-                    </a>
-                </div>
-
-                <div class="info-item">
-                    <i class="fab fa-facebook"></i>
-                    <a href="https://www.facebook.com/profile.php?id=100081946541315"
-                       target="_blank">
-                        Facebook Officiel
-                    </a>
-                </div>
-
-                <div class="store-features">
-                    <span>🎮 Consoles</span>
-                    <span>🕹 Jeux Vidéo</span>
-                    <span>🔥 Gaming Setup</span>
-                </div>
-
-                <a href="https://www.google.co.uk/search?client=safari&hl=fr-gb&q=Yoka+game&ludocid=17926201004305323804"
-                   class="btn btn-gaming"
-                   target="_blank">
-                    📍 Voir sur Google Maps
-                </a>
-
-            </div>
-
+        <div class="store-image glass-effect">
+          <img src="images/yoka-phone-2.jpg" alt="YOKA PHONE Produits" loading="lazy" />
         </div>
-
+        <div class="store-info glass-effect">
+          <h3>Votre spécialiste Tech à Kouba</h3>
+          <p class="store-description">Découvrez une large sélection de smartphones, PC portables et accessoires de qualité avec un accompagnement professionnel.</p>
+          <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>Vieux Kouba, Alger</span></div>
+          <div class="info-item"><i class="fas fa-phone"></i><a href="tel:0559216195">0559 21 61 95</a></div>
+          <div class="info-item"><i class="fab fa-instagram"></i><a href="https://www.instagram.com/yoka_phone" target="_blank">@yoka_phone</a></div>
+          <div class="info-item"><i class="fab fa-tiktok"></i><a href="https://www.tiktok.com/@yokaphone" target="_blank">@yokaphone</a></div>
+          <div class="store-features">
+            <span>✅ Produits Originaux</span>
+            <span>🚀 Disponibilité Rapide</span>
+            <span>🛡️ Garantie Qualité</span>
+          </div>
+          <a href="https://www.google.com/maps/place/YOKA+PHONE+vieux+kouba,+16006,+Alg%C3%A9rie/@36.729249,3.0737182,16z" class="btn btn-primary" target="_blank"><i class="fas fa-map-pin"></i> Voir sur Google Maps</a>
+        </div>
+      </div>
     </div>
+  </section>
 
-</section>
-
-    <!-- ==================== TÉLÉPHONES & PC SECTION ==================== -->
-    <section class="products-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>📱 Téléphones & Informatique 💻</h2>
-                <p>Smartphones, PC portables et accessoires de qualité</p>
-            </div>
-            <div class="products-grid">
-                <div class="product-card">
-                    <img src="images/phone1.jpg" alt="Smartphone YOKA" loading="lazy">
-                    <h3>📱 Smartphones</h3>
-                    <p>Dernières marques et modèles</p>
-                </div>
-                <div class="product-card">
-                    <img src="images/phone2.jpg" alt="PC Portable YOKA" loading="lazy">
-                    <h3>💻 PC Portables</h3>
-                    <p>Performance et mobilité</p>
-                </div>
-                <div class="product-card">
-                    <img src="images/phone3.jpg" alt="Accessoires Tech" loading="lazy">
-                    <h3>🎧 Accessoires</h3>
-                    <p>Chargeurs, écouteurs, coques</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== GAMING & CONSOLES SECTION ==================== -->
-    <section class="products-section alt-bg">
-        <div class="container">
-            <div class="section-header">
-                <h2>🎮 Gaming & Consoles 🕹️</h2>
-                <p>L'univers gaming complet pour les passionnés</p>
-            </div>
-            <div class="products-grid">
-                <div class="product-card">
-                    <img src="images/gaming1.jpg" alt="PlayStation" loading="lazy">
-                    <h3>🎮 PlayStation</h3>
-                    <p>Consoles et jeux PS4/PS5</p>
-                </div>
-                <div class="product-card">
-                    <img src="images/gaming2.jpg" alt="Jeux Vidéo" loading="lazy">
-                    <h3>🕹️ Jeux Vidéo</h3>
-                    <p>Dernières sorties et classiques</p>
-                </div>
-                <div class="product-card">
-                    <img src="images/gaming3.jpg" alt="Gaming Setup" loading="lazy">
-                    <h3>🔥 Gaming Setup</h3>
-                    <p>Manettes, casques, claviers</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== AVIS CLIENTS SECTION ==================== -->
-    <section class="reviews-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>⭐ Ce que nos clients disent</h2>
-                <p>Des avis authentiques Google Maps</p>
-            </div>
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <p class="review-text">"Très satisfaite de cette boutique de téléphones: bon accueil, conseils professionnels et produits de qualité. Je recommande sans hésiter."</p>
-                    <p class="review-author">— Chahinez Ahmed Chaouch</p>
-                </div>
-                <div class="review-card">
-                    <p class="review-text">"Toooo du toop du tooop cotte prix we mo3amala équipe bzeeef nas mlah machallah bon courage nchallah"</p>
-                    <p class="review-author">— Kikou Kiko</p>
-                </div>
-                <div class="review-card">
-                    <p class="review-text">"Bon accueil, équipe professionnelle. Je recommande YOKA PHONE pour vos achats tech."</p>
-                    <p class="review-author">— Client Google</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== CONTACT & SOCIAL SECTION ==================== -->
-    <section class="contact-section alt-bg">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h3><i class="fas fa-phone-alt"></i> Contactez-nous</h3>
-                    <p><strong>📱 YOKA PHONE</strong> : <a href="tel:0559216195">0559 21 61 95</a></p>
-                    <p><strong>🎮 YOKA GAMING</strong> : <a href="tel:0795946728">0795 94 67 28</a></p>
-                    <p><strong>✉️ Email</strong> : <a href="mailto:Houssam.rakik1@gmail.com">Houssam.rakik1@gmail.com</a></p>
-                </div>
-                <div class="social-links">
-                    <h3><i class="fas fa-share-alt"></i> Suivez-nous</h3>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/profile.php?id=100081946541315" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i> Gaming</a>
-                        <a href="https://www.instagram.com/yoka_gaming_" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i> Gaming</a>
-                        <a href="https://www.instagram.com/yoka_phone" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i> Phone</a>
-                        <a href="https://www.tiktok.com/@yoka_gaming_" target="_blank" class="social-icon tiktok"><i class="fab fa-tiktok"></i> Gaming</a>
-                        <a href="https://www.tiktok.com/@yokaphone" target="_blank" class="social-icon tiktok"><i class="fab fa-tiktok"></i> Phone</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== GOOGLE MAPS SECTION ==================== -->
-<section class="maps-section">
+  <!-- ===== YOKA GAMING ===== -->
+  <section class="store-section alt-bg" id="yoka-gaming">
     <div class="container">
-        <div class="section-header">
-            <h2>📍 Nos Boutiques à Kouba</h2>
+      <div class="section-header">
+        <h2>🎮 YOKA GAMING</h2>
+        <p>Consoles • Jeux Vidéo • PC Gaming • Accessoires Gaming</p>
+      </div>
+      <div class="store-grid">
+        <div class="store-image glass-effect">
+          <img src="images/yoka-gaming-1.jpg" alt="YOKA GAMING" loading="lazy" />
         </div>
-
-        <div class="maps-grid">
-
-            <!-- YOKA PHONE -->
-            <div class="map-card">
-                <h3>📱 YOKA PHONE</h3>
-
-                <div class="map-image">
-                    <img src="images/yoka-phone-1.jpg" alt="YOKA PHONE">
-                </div>
-
-                <a href="https://www.google.com/maps/place/YOKA+PHONE+vieux+kouba,+16006,+Alg%C3%A9rie/@36.729249,3.0737182,16z"
-                   target="_blank"
-                   class="btn btn-primary">
-                   Voir la localisation
-                </a>
-            </div>
-
-            <!-- YOKA GAMING -->
-            <div class="map-card">
-                <h3>🎮 YOKA GAMING</h3>
-
-                <div class="map-image">
-                    <img src="images/yoka-gaming-1.jpg" alt="YOKA GAMING">
-                </div>
-
-                <a href="https://www.google.co.uk/search?client=safari&hl=fr-gb&q=Yoka+game&ludocid=17926201004305323804"
-                   target="_blank"
-                   class="btn btn-primary">
-                   Voir la localisation
-                </a>
-            </div>
-
+        <div class="store-image glass-effect">
+          <img src="images/yoka-gaming-2.jpg" alt="YOKA GAMING Produits" loading="lazy" />
         </div>
+        <div class="store-info glass-effect">
+          <h3>L'univers Gaming à Kouba</h3>
+          <p class="store-description">Retrouvez les dernières consoles, jeux vidéo, PC Gaming et accessoires pour une expérience gaming complète.</p>
+          <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>Kouba, Alger</span></div>
+          <div class="info-item"><i class="fas fa-phone"></i><a href="tel:0795946728">0795 94 67 28</a></div>
+          <div class="info-item"><i class="fab fa-instagram"></i><a href="https://www.instagram.com/yoka_gaming_" target="_blank">@yoka_gaming_</a></div>
+          <div class="info-item"><i class="fab fa-tiktok"></i><a href="https://www.tiktok.com/@yoka_gaming_" target="_blank">@yoka_gaming_</a></div>
+          <div class="info-item"><i class="fab fa-facebook"></i><a href="https://www.facebook.com/profile.php?id=100081946541315" target="_blank">Facebook Officiel</a></div>
+          <div class="store-features">
+            <span>🎮 Consoles</span>
+            <span>🕹 Jeux Vidéo</span>
+            <span>🔥 Gaming Setup</span>
+          </div>
+          <a href="https://www.google.co.uk/search?client=safari&hl=fr-gb&q=Yoka+game&ludocid=17926201004305323804" class="btn btn-gaming" target="_blank"><i class="fas fa-map-pin"></i> Voir sur Google Maps</a>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-    <!-- ==================== FOOTER ==================== -->
-    <footer class="footer">
-        <div class="container">
-            <p>© 2026 YOKA TECH — Téléphones • PC • Gaming • Consoles • Accessoires</p>
-            <p class="footer-address">📍 Vieux Kouba, Alger 16006</p>
+  <!-- ===== PRODUCTS ===== -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <h2>📱 Téléphones & Informatique 💻</h2>
+        <p>Smartphones, PC portables et accessoires de qualité</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image"><img src="images/phone1.jpg" alt="Smartphone" loading="lazy" /></div>
+          <div class="product-content"><h3>📱 Smartphones</h3><p>Dernières marques et modèles</p></div>
         </div>
-    </footer>
+        <div class="product-card">
+          <div class="product-image"><img src="images/phone2.jpg" alt="PC Portable" loading="lazy" /></div>
+          <div class="product-content"><h3>💻 PC Portables</h3><p>Performance et mobilité</p></div>
+        </div>
+        <div class="product-card">
+          <div class="product-image"><img src="images/phone3.jpg" alt="Accessoires" loading="lazy" /></div>
+          <div class="product-content"><h3>🎧 Accessoires</h3><p>Chargeurs, écouteurs, coques</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- ==================== FLOATING WHATSAPP BUTTON ==================== -->
-    <a href="https://wa.me/213559216195?text=Bonjour%20YOKA%20TECH" class="floating-wa" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+  <!-- ===== GAMING PRODUCTS ===== -->
+  <section class="products-section alt-bg">
+    <div class="container">
+      <div class="section-header">
+        <h2>🎮 Gaming & Consoles 🕹️</h2>
+        <p>L'univers gaming complet pour les passionnés</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image"><img src="images/gaming1.jpg" alt="PlayStation" loading="lazy" /></div>
+          <div class="product-content"><h3>🎮 PlayStation</h3><p>Consoles et jeux PS4/PS5</p></div>
+        </div>
+        <div class="product-card">
+          <div class="product-image"><img src="images/gaming2.jpg" alt="Jeux Vidéo" loading="lazy" /></div>
+          <div class="product-content"><h3>🕹️ Jeux Vidéo</h3><p>Dernières sorties et classiques</p></div>
+        </div>
+        <div class="product-card">
+          <div class="product-image"><img src="images/gaming3.jpg" alt="Gaming Setup" loading="lazy" /></div>
+          <div class="product-content"><h3>🔥 Gaming Setup</h3><p>Manettes, casques, claviers</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- ===== REVIEWS ===== -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <h2>⭐ Ce que nos clients disent</h2>
+        <p>Des avis authentiques Google Maps</p>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Très satisfaite de cette boutique de téléphones: bon accueil, conseils professionnels et produits de qualité. Je recommande sans hésiter."</p>
+          <p class="review-author">— Chahinez Ahmed Chaouch</p>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Toooo du toop du tooop cotte prix we mo3amala équipe bzeeef nas mlah machallah bon courage nchallah"</p>
+          <p class="review-author">— Kikou Kiko</p>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Bon accueil, équipe professionnelle. Je recommande YOKA PHONE pour vos achats tech."</p>
+          <p class="review-author">— Client Google</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info glass-effect">
+          <h3><i class="fas fa-phone-alt"></i> Contactez-nous</h3>
+          <p><strong>📱 YOKA PHONE</strong> : <a href="tel:0559216195">0559 21 61 95</a></p>
+          <p><strong>🎮 YOKA GAMING</strong> : <a href="tel:0795946728">0795 94 67 28</a></p>
+          <p><strong>✉️ Email</strong> : <a href="mailto:Houssam.rakik1@gmail.com">Houssam.rakik1@gmail.com</a></p>
+        </div>
+        <div class="social-links glass-effect">
+          <h3><i class="fas fa-share-alt"></i> Suivez-nous</h3>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100081946541315" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i> Gaming</a>
+            <a href="https://www.instagram.com/yoka_gaming_" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i> Gaming</a>
+            <a href="https://www.instagram.com/yoka_phone" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i> Phone</a>
+            <a href="https://www.tiktok.com/@yoka_gaming_" target="_blank" class="social-icon tiktok"><i class="fab fa-tiktok"></i> Gaming</a>
+            <a href="https://www.tiktok.com/@yokaphone" target="_blank" class="social-icon tiktok"><i class="fab fa-tiktok"></i> Phone</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAPS ===== -->
+  <section class="maps-section" id="maps">
+    <div class="container">
+      <div class="section-header">
+        <h2>📍 Nos Boutiques à Kouba</h2>
+      </div>
+      <div class="maps-grid">
+        <div class="map-card glass-effect">
+          <h3>📱 YOKA PHONE</h3>
+          <div class="map-image"><img src="images/yoka-phone-1.jpg" alt="YOKA PHONE" loading="lazy" /></div>
+          <a href="https://www.google.com/maps/place/YOKA+PHONE+vieux+kouba,+16006,+Alg%C3%A9rie/@36.729249,3.0737182,16z" target="_blank" class="btn btn-primary"><i class="fas fa-map-pin"></i> Voir la localisation</a>
+        </div>
+        <div class="map-card glass-effect">
+          <h3>🎮 YOKA GAMING</h3>
+          <div class="map-image"><img src="images/yoka-gaming-1.jpg" alt="YOKA GAMING" loading="lazy" /></div>
+          <a href="https://www.google.co.uk/search?client=safari&hl=fr-gb&q=Yoka+game&ludocid=17926201004305323804" target="_blank" class="btn btn-gaming"><i class="fas fa-map-pin"></i> Voir la localisation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 YOKA TECH — Téléphones • PC • Gaming • Consoles • Accessoires</p>
+      <p class="footer-address">📍 Vieux Kouba, Alger 16006</p>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING WA ===== -->
+  <a href="https://wa.me/213559216195?text=Bonjour%20YOKA%20TECH" class="floating-wa" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
