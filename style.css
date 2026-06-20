@@ -623,3 +623,186 @@ a {
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
 }
+
+.contact-info h3,
+.social-links h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--secondary);
+}
+
+.contact-info p {
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.contact-info a:hover {
+  color: var(--primary);
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--gray-light);
+  padding: 10px 22px;
+  border-radius: 50px;
+  transition: all var(--transition);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.social-icon:hover {
+  transform: translateY(-4px) scale(1.04);
+  color: var(--white);
+}
+
+.social-icon.facebook:hover { background: var(--facebook); }
+.social-icon.instagram:hover { background: var(--instagram); }
+.social-icon.tiktok:hover { background: var(--tiktok); }
+
+/* ==================== MAPS ==================== */
+.maps-section {
+  padding: 80px 0;
+  background: var(--gray-light);
+}
+
+.maps-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.map-card {
+  padding: 28px 24px 32px;
+  border-radius: var(--radius);
+  text-align: center;
+  transition: all var(--transition);
+}
+
+.map-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.map-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+}
+
+.map-image {
+  margin-bottom: 20px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.map-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.map-card:hover .map-image img {
+  transform: scale(1.03);
+}
+
+.map-card .btn {
+  min-width: 180px;
+  height: 48px;
+  font-size: 0.9rem;
+}
+
+/* ==================== FOOTER ==================== */
+.footer {
+  background: var(--secondary);
+  color: var(--white);
+  text-align: center;
+  padding: 36px 0;
+}
+
+.footer p {
+  margin: 6px 0;
+}
+
+.footer-address {
+  opacity: 0.6;
+  font-size: 0.9rem;
+}
+
+/* ==================== FLOATING WHATSAPP ==================== */
+.floating-wa {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 68px;
+  height: 68px;
+  background: var(--whatsapp);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+  z-index: 9999;
+  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.4);
+  transition: all var(--transition);
+}
+
+.floating-wa:hover {
+  transform: scale(1.12) rotate(-4deg);
+  box-shadow: 0 12px 48px rgba(37, 211, 102, 0.6);
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 992px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .store-grid { grid-template-columns: 1fr 1fr; }
+  .products-grid { grid-template-columns: repeat(2, 1fr); }
+  .reviews-grid { grid-template-columns: 1fr 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .maps-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .hero-title { font-size: 2.8rem; }
+  .hero-subtitle { font-size: 1.1rem; }
+  .hero-badges { flex-direction: column; align-items: center; }
+  .hero-buttons { flex-direction: column; align-items: center; }
+  .hero-buttons .btn { width: 100%; max-width: 320px; }
+  .hero-logo-wrap { width: 100px; height: 100px; }
+
+  .section-header h2 { font-size: 2rem; }
+
+  .store-grid { grid-template-columns: 1fr; }
+  .store-image img { height: 220px; }
+
+  .products-grid { grid-template-columns: 1fr; }
+  .product-image { height: 200px; }
+
+  .reviews-grid { grid-template-columns: 1fr; }
+
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .stat-number { font-size: 2.2rem; }
+
+  .floating-wa { width: 56px; height: 56px; font-size: 28px; bottom: 20px; right: 20px; }
+
+  .maps-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .stats-grid { grid-template-columns: 1fr; }
+  .hero-title { font-size: 2.2rem; }
+  .hero-badges span { font-size: 0.85rem; padding: 8px 16px; }
+  .btn { min-width: 100%; height: 50px; font-size: 0.9rem; }
+  .section-header h2 { font-size: 1.6rem; }
+  .store-info { padding: 24px 18px; }
+  .store-info h3 { font-size: 1.4rem; }
+}
